@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		D97716591D7AEDA300547FD4 /* Easings.h in Headers */ = {isa = PBXBuildFile; fileRef = D97716571D7AEDA300547FD4 /* Easings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D97716611D7AEDBB00547FD4 /* Easings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97716601D7AEDBB00547FD4 /* Easings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D97716541D7AEDA300547FD4 /* Easings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Easings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D97716571D7AEDA300547FD4 /* Easings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Easings.h; sourceTree = "<group>"; };
 		D97716581D7AEDA300547FD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D97716601D7AEDBB00547FD4 /* Easings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Easings.swift; sourceTree = "<group>"; };
+		D97716621D7AF23800547FD4 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +33,8 @@
 		D977164A1D7AEDA300547FD4 = {
 			isa = PBXGroup;
 			children = (
+				D97716621D7AF23800547FD4 /* Playground.playground */,
+				D977165F1D7AEDA700547FD4 /* Sources */,
 				D97716561D7AEDA300547FD4 /* Easings */,
 				D97716551D7AEDA300547FD4 /* Products */,
 			);
@@ -50,6 +55,14 @@
 				D97716581D7AEDA300547FD4 /* Info.plist */,
 			);
 			path = Easings;
+			sourceTree = "<group>";
+		};
+		D977165F1D7AEDA700547FD4 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D97716601D7AEDBB00547FD4 /* Easings.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +108,7 @@
 				TargetAttributes = {
 					D97716531D7AEDA300547FD4 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D97716611D7AEDBB00547FD4 /* Easings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,7 +193,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -225,7 +240,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -239,6 +254,7 @@
 		D977165D1D7AEDA300547FD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -250,6 +266,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.sora0077.Easings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -257,6 +274,7 @@
 		D977165E1D7AEDA300547FD4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -291,6 +309,7 @@
 				D977165E1D7AEDA300547FD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
